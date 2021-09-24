@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-color-your-world"]
+	path = themes/hugo-theme-color-your-world
+	url = https://github.com/mbuechner/hugo-theme-color-your-world.git
