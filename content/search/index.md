@@ -1,6 +1,6 @@
 ---
-title           : "Results"
-description     : "Search results page."
+title           : "Suchergebnisse"
+description     : "Suchergebnisseite."
 layout          : "search"
 sitemapExclude  : true
 noindex         : true

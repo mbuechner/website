@@ -125,7 +125,7 @@ paginate = 3
     maxLength = 42  # Default is 32
     
     # Optional placeholder for search field
-    placeholder = "ie.: lorem ipsum"
+    placeholder = "Suchbegriff"
     
 
   [params.style]
@@ -264,10 +264,10 @@ paginate = 3
         name = "Über mich"
         weight = 1
         url = "/"
-#      [[languages.de.menu.main]]
-#        name = "Notizblock"
-#        weight = 2
-#        url = "posts/"
+      [[languages.de.menu.main]]
+        name = "Notizblock"
+        weight = 2
+        url = "posts/"
       [[languages.de.menu.main]]
         name = "Kontakt"
         weight = 3
