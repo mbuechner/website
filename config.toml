@@ -31,6 +31,10 @@ paginate = 3
   notAlternative  = true
 
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [markup.highlight]
   # To make use of the custom Chroma, this should be false
@@ -40,61 +44,61 @@ paginate = 3
 
 
 [params]
-  
+
   # Site description
   description = "Persönliche Webseite von Michael Büchner"
 
   # Author
   author      = "Michael Büchner"
   authorDesc  = "Steinbach-Hallenberg // Frankfurt am Main"
-  
+
   # Footer text
   # Each value will become a paragraph
   # Keep it as an array
   footerText = [ "Alle Inhalte stehen, insofern nichts anderes angegeben, unter der [CC BY 2.0 DE](https://creativecommons.org/licenses/by/2.0/de/)-Lizenz." ]
-  
+
   # Site cover, for Open Graph, Twitter Cards and Schema.org
   # It will be used if the current page doesn't have a image cover
   # File will be picked from the "assets" directory
   # Comment the lines if you don't want to use it
   #cover     = "img/cover.jpg"
   #coverAlt  = "A placeholder that doesn't deserve to be described."
-  
+
   # Shows a message in the footer about JavaScript being disabled
   # The default is false
   hasNoscriptNotice = true
-  
+
   # Default path for images in posts
   # ie.: "content/some-post/img"
   # Can also be set PER PAGE
   # It can be used to reduce repetition
   # There's no default value
   imgPath = "img"
-  
-  # Default classes for markup image 
+
+  # Default classes for markup image
   # Modifies the default behavior of images placed via markdown
   # Can also be set PER PAGE via front matter
   # Available classes are: border and borderless
   # There's no default value
   markupImgClass = "borderless"
-  
+
   # This will append a separator (of your choice) along the site title to your <title>
-  # ie.: | ❚ - – — • ⚫ 
+  # ie.: | ❚ - – — • ⚫
   # You can disabled it PER PAGE by using "disableTitleSeparator" at front
   # matter or disable it entirely by commenting the line below
   titleSeparator = "|"
-  
-  
+
+
   # Contact form shortcode
   [params.contact]
-  
+
     # formspree.io Form ID
     formspreeFormId = "mleazvyj"
-    
+
     # Autocomplete [on/off] and min character length for message
     autoComplete      = false # Default is false
     messageMinLength  = 140   # Default is 140
-    
+
     # Subject
     # You can set a single value below (and it will cease to be a dropdown),
     # BUT KEEP IT AS AN ARRAY
@@ -111,25 +115,25 @@ paginate = 3
 
 
   [params.search]
-  
+
     # Enable search form (at the post list)
     # The default value is false
     enable = true
-  
+
     # Limit search results
     # The default value is 30
     maxResults = 15
-    
+
     # Limit seach field input and pattern matching
     minLength = 2   # Default is 3
     maxLength = 42  # Default is 32
-    
+
     # Optional placeholder for search field
     placeholder = "Suchbegriff"
-    
+
 
   [params.style]
-  
+
     # Dark mode as default
     # User preferences (site/system settings) will still have priority over it
     # The default is false
@@ -151,16 +155,16 @@ paginate = 3
     # Use an icon or text for footnote return links
     # The default is false
     hasIconAsFootnoteReturnLink = true
-    
+
     # For the social shortcode
     # Use flexbox (with flex-grow) or grid (equal width)
     # The default is false
     socialIsFlex = true
-    
+
     # Keep anchor links hidden until it's focused/hovered
     # The default is false
     hideAnchors = false
-    
+
     # To make use of the custom Chroma, this should be true
     # and "noClasses" (at markup.highlight) should be false
     # The default is true
@@ -169,14 +173,14 @@ paginate = 3
     # CSS animation transition when changing colors
     # The default is ".5s ease"
     changeTransition = ".3s ease"
-    
-    
+
+
   # For a simple 404
   [params.notFound]
     title         = "Page not found"
     description   = "This page was not found."
     paragraph     = "Nothing to see here, buddy."
-    
+
   [params.social.centralized]
 #    facebook      = [ "<username>", "Zuckerburg" ]
 #    flickr        = [ "<username>" ]
@@ -199,15 +203,15 @@ paginate = 3
 #    xing          = [ "<username>" ]
 #    youtube       = [ "<channelid>" ]
 #    #entry         = [ "username", "label (optional)" ]
-    
+
     # The "entry" here IS important. It's used to load the data.
 
   [params.social.decentralized]
-  
+
     [params.social.decentralized.xing]
       1 = [ "https://www.xing.com/profile/Michael_Buechner17", "xing.com" ]
       # entry = [ "full url", "label (required)" ]
-      
+
 #    [params.social.decentralized.funkwhale]
 #      1 = [ "https://open.audio/<username>", "open.audio" ]
 
@@ -215,20 +219,20 @@ paginate = 3
 #      1 = [ "https://mastodon.social/<username>", "mastodon.social" ]
 #      2 = [ "https://mastodon.too/<username>", "mastodon.too" ]
 #      3 = [ "https://yet.another.one/<username>", "yet.another.one" ]
-      
+
 #    [params.social.decentralized.matrix]
 #      1 = [ "https://matrix.to/#/<username>:matrix.org", "matrix.org" ]
 #      2 = [ "https://matrix.to/#/<username>:other.org", "other.org" ]
 
 #    [params.social.decentralized.peertube]
 #      1 = [ "https://peertube.something/accounts/<username>", "peertube.something" ]
-      
+
 #    [params.social.decentralized.pixelfed]
 #      1 = [ "https://pixelfed.social/<username>", "pixelfed.social" ]
-      
+
     # The "entry" here ISN'T important. It's used for nothing.
-    
-    
+
+
 [privacy]
 
   [privacy.vimeo]
