@@ -1,5 +1,5 @@
 ---
-title         : "Watzmann-Tour 2015"
+title         : "Watzmann-Tour"
 description   : "Tourenvorschlag: „Watzmann-Erstbesteigung“ und einmal Rund um den Königssee"
 cover         : "GOPR3733.webp"
 coverAlt      : "Foto von irgendwo auf dem Watzmann"
