@@ -11,8 +11,9 @@ enableEmoji = true
 enableInlineShortcodes = true
 defaultContentLanguage = "de"
 
-paginate = 3
-
+########################## Pagination ##############################
+[pagination]
+pagerSize = 3   # Anzahl Einträge pro Seite
 
 # TEST
 # Netlify _headers
