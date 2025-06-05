@@ -50,7 +50,7 @@ pagerSize = 3   # Anzahl Einträge pro Seite
   description = "Persönliche Webseite von Michael Büchner"
 
   # Author
-  author      = "Michael Büchner"
+  # author      = "Michael Büchner"
   authorDesc  = "Steinbach-Hallenberg // Frankfurt am Main"
 
   # Footer text
@@ -89,6 +89,8 @@ pagerSize = 3   # Anzahl Einträge pro Seite
   # matter or disable it entirely by commenting the line below
   titleSeparator = "|"
 
+  [params.author]
+    name = "Michael Büchner"
 
   # Contact form shortcode
   [params.contact]
@@ -178,9 +180,9 @@ pagerSize = 3   # Anzahl Einträge pro Seite
 
   # For a simple 404
   [params.notFound]
-    title         = "Page not found"
-    description   = "This page was not found."
-    paragraph     = "Nothing to see here, buddy."
+    title         = "404 - Nicht gefunden"
+    description   = "Die Seite wurde leider nicht gefunden."
+    paragraph     = "Die Seite wurde leider nicht gefunden."
 
   [params.social.centralized]
 #    facebook      = [ "<username>", "Zuckerburg" ]
@@ -240,7 +242,7 @@ pagerSize = 3   # Anzahl Einträge pro Seite
     disabled = false
     simple = true
 
-  [privacy.twitter]
+  [privacy.x]
     disabled = false
     enableDNT = true
     simple = true
@@ -258,7 +260,7 @@ pagerSize = 3   # Anzahl Einträge pro Seite
   [services.instagram]
     disableInlineCSS = true
 
-  [services.twitter]
+  [services.x]
     disableInlineCSS = true
 
 [languages]
