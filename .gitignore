@@ -2,3 +2,4 @@ public
 resources
 *.bak
 *.kate-swp
+/node_modules/
