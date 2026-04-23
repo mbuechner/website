@@ -47,3 +47,17 @@ hugo server --buildDrafts --buildFuture
 ```
 
 Die Webseite ist dann unter [http://localhost:1313/](http://localhost:1313/) erreichbar.
+
+## Suche mit Pagefind
+
+Diese Website verwendet [Pagefind](https://pagefind.app/) für die Volltextsuche. Nach jedem Build muss der Suchindex neu erstellt werden:
+
+```bash
+npx pagefind --site public
+```
+
+- **Voraussetzung:** Node.js muss installiert sein (siehe oben).
+- Die Konfiguration erfolgt automatisch, Pagefind durchsucht alle HTML-Dateien im `public/`-Verzeichnis.
+- Das Suchfeld ist nach dem Build sofort nutzbar.
+
+**Tipp:** Mit `npx` wird immer die in `package.json` angegebene Version verwendet, falls vorhanden. Ohne `package.json` lädt `npx` die neueste Version aus dem Internet.
