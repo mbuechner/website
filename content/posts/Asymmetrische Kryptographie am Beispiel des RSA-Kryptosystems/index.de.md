@@ -14,7 +14,7 @@ katexExtensions : [ mhchem, copy-tex ]
 ## 1 Einleitung
 Das RSA-Kryptosystem ist ein asymmetrisches Verschlüsselungsverfahren. Es wurde 1978 von R. Rivest, A. Shamir und L. Adleman unter dem Titel „A Methode for Obtaining Digital Signatures and Public Key Cryprosystems“ (Communications of the ACM, Nr. 21, Seite 120-126) vorgestellt.
 
-Die Sicherheit des RSA-Kryptosystems beruht auf der bekannten Schwierigkeit der Zerlegung großer Ganzzahlen in Primfaktoren. Bisher sind hierzu keine effizienten Algorithmen bekannt. Alle publizierten Algorithmen haben eine exponentielle Laufzeit. Die „Pollard-p-1-Methode“ ist, mit einer Komplexität von $\mathcal{O}(\sqrt[3]{N}$), das derzeit schnellste Verfahren zur Primfaktorzerlegung.
+Die Sicherheit des RSA-Kryptosystems beruht auf der bekannten Schwierigkeit der Zerlegung großer Ganzzahlen in Primfaktoren. Bisher sind hierzu keine effizienten Algorithmen bekannt. Alle publizierten Algorithmen haben eine exponentielle Laufzeit. Die „Pollard-p-1-Methode“ ist, mit einer Komplexität von $\mathcal{O}(\sqrt[3]{N})$, das derzeit schnellste Verfahren zur Primfaktorzerlegung.
 
 ### 1.1 Asymmetische Verschlüsselung
 Das Ziel der asymmetrischen Verschlüsselung ist der sichere Informationsaustausch zwischen Teilnehmern in einem öffentlichen Netzwerk, bei dem die zu transportierenden (verschlüsselten) Daten abgehört werden können. Als Grundlage der asymmetrische Verschlüsselung werden zwei, zueinander passende aber verschiedene Schlüssel verwendet.
@@ -66,7 +66,7 @@ Die *Kongruenz* ist eine Beziehung zwischen zwei Ganzzahlen. Man nennt zwei Zahl
 $$
 \begin{align*}
     a & \equiv b\ \textrm{mod}\ m\newline
-    a\ mod\ m & = b\ \textrm{mod}\ m
+    a\ \textrm{mod}\ m & = b\ \textrm{mod}\ m
 \end{align*}
 $$
 
@@ -136,7 +136,7 @@ Für den Primzahlsatz existieren auch stärkere Formen die bessere Approximation
 Wie viele Primzahlen mit 512 Bit gibt es?
 
 $$
-\pi(2^{512})-\pi(2^{511})=\frac{2^{512}}{\ln(2^{512})}-\frac{2^{511}}{\ln(2^{511})}\thickapprox2^{502}
+\pi(2^{512})-\pi(2^{511})=\frac{2^{512}}{\ln(2^{512})}-\frac{2^{511}}{\ln(2^{511})}\approx2^{502}
 $$
 
 
@@ -311,7 +311,7 @@ $$
 
 $$
 \begin{align*}
-    e\cdot d & \equiv & 1\ \textrm{mod}\ \text{φ}(p\cdot q)\newline
+    e\cdot d & \equiv & 1\ \textrm{mod}\ \varphi(p\cdot q)\newline
     17\cdot d & \equiv & 1\ \textrm{mod}\ 3120
 \end{align*}
 $$
@@ -321,8 +321,8 @@ Die Berechnung der Modular-Inversen $d$ kann mit dem Erweiterten Euklidischen Al
 $$
 \begin{align*}
     1 & = 9-1\cdot8\newline
-    1 & = 9-1\cdot(7-1\cdot9)=2\cdot9-1\cdot7\newline
-    1 & = 2\cdot(3120-183\cdot17)-1\cdot7=2\cdot3120-367\cdot17
+    1 & = 9-1\cdot(17-1\cdot9)=2\cdot9-1\cdot17\newline
+    1 & = 2\cdot(3120-183\cdot17)-1\cdot17=2\cdot3120-367\cdot17
 \end{align*}
 $$
 
@@ -343,7 +343,7 @@ $$
 #### 3.5.2 Verschlüsselung von 1234 mit öffentlichem Schlüssel
 
 $$
-c=m^{e}\ \textrm{mod}\ n=1234{}^{17}\ \textrm{mod}\ 3233=\underline{2183}
+c=m^{e}\ \textrm{mod}\ n=1234^{17}\ \textrm{mod}\ 3233=\underline{2183}
 $$
 
 
